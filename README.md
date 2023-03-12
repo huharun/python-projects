@@ -1,5 +1,5 @@
 # python-projects
---python voice assistant 
+--python voice assistant --mine.ipynb
  
  
  1.install required libraries and import
