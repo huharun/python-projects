@@ -9,5 +9,5 @@
 --python autotranslate  -- autotranslate.ipynb
 
  	1.install required libraries Goslate, Translate, TextBlob, py-translate, Googletrans and import
-   	2.
+   	2.define and translate in your wish language
 
