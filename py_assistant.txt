@@ -1,0 +1,125 @@
+import pyttsx3
+import speech_recognition as sr
+import webbrowser
+import datetime
+import pywhatkit
+import os
+import yfinance as yf
+import pyjokes
+
+
+//me voice
+def transform():
+    r = sr.Recognizer()
+    with sr.Microphone() as source:
+        r.pause_threshold = 0.8
+        said = r.listen(source)
+        try:
+            print('I am Listening')
+            q = r.recognize_google(said,language="tam")
+            return q
+        except sr.UnknownValueError:
+            print("sorry")
+            return "waitin"
+        except sr.RequestError:
+            print("service down")
+            return "waitin"
+        except:
+            return "waitin"
+
+transform()
+
+//assistant voice
+def speaking(message):
+    engine = pyttsx3.init()
+    engine.say(message)
+    engine.runAndWait()
+
+
+speaking('hii arun, love you honey, good night. you have big day tomorrow')
+
+
+//output daytime
+def query_day():
+    day = datetime.date.today()
+    print(day)
+    weekday = day.weekday()
+    print(weekday)
+    mapping = {
+        0:'Monday',1:'Tuesday',2:'Wednesday',3:'Thursday',4:'Friday',5:'Saturday',6:'Sunday',
+    }
+    try:
+        speaking(f'Today is {mapping[weekday]}')
+    except:
+        pass
+
+query_day()
+
+
+
+//output time
+def query_time():
+    time = datetime.datetime.now().strftime("%I:%M:%S")
+    speaking(f"{time[1]}o'clock and {time[3:5]}minutes")
+query_time()
+
+
+//final
+def querying():
+    hello_there()
+    start = True
+    while(start):
+        q = transform().lower()
+
+        if 'start youtube' in q:
+            speaking('starting youtube. just a sec.')
+            webbrowser.open('https://www.youtube.com')
+            continue
+        elif 'start webbrowser' in q:
+            speaking('openning browser')
+            webbrowser.open('https://www.google.com')
+            continue
+        elif 'what day is it' in q:
+            query_day()
+            continue
+        elif 'what time is it' in q:
+            query_time()
+            continue
+        elif 'love you' in q:
+            speaking('love you arun. take you moon to the mars')
+            continue
+        elif 'hey buddy' in q:
+            speaking('love you arun. take you moon to the mars')
+            continue
+        elif 'play' in q:
+            speaking(f'playing{q}')
+            pywhatkit.playonyt(q)
+            continue
+        elif 'joke' in q:
+            speaking(pyjokes.get_joke())
+            continue
+        elif 'stock price' in q:
+            search = q.split("of")[-1].strip()
+            Lookup = {'apple':'AAPL','amazon':'AMZ','google':'GOOGL'}
+            try:
+                stock.Lookup[search]
+                stock.yf.Ticker(stock)
+                currentprice = stock.info["regularMarketPrice"]
+                speaking(f'found it,the price for {search}is {currentprice}')
+            except:
+                speaking(f'sorry,no data for {search}')
+            continue
+        elif 'whats your name' in q:
+            hello_there()
+            continue
+        elif 'vampire diaries cast' in q:
+            speaking('here are some results')
+            # q=q.replace("wikipedia","")
+            results = wikipedia.summary(q,sentences=2)
+            speaking(results)
+            continue
+        elif 'bye' in q:
+            speaking('bye bye')
+            break
+
+querying()
