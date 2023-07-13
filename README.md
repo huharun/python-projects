@@ -8,6 +8,6 @@
 
 --python autotranslate  -- autotranslate.ipynb
 
- 	1.install required libraries Goslate, Translate, TextBlob, py-translate, Googletrans and import
-   	2.define and translate in your wish language
+ 	1.install required libraries goslate, translate, textblob, py-translate, googletrans
+   	2. import anyone library and define and translate in your wish language
 
