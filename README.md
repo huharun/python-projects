@@ -14,7 +14,7 @@
 --python files  -- files.ipynb
 
  	1.install required libraries numpy, pickle if not installed
-   	2. import and read,export data by your choice
+   	2.import and read,export data by your choice
     3.csv as normal excel export and pickle as pickle format and json as json format and finally we can read and write in the files
 
 
