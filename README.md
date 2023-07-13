@@ -6,6 +6,8 @@
  	2.define the functions and write code for your assistant behaviour
 
 
---python autotranslate  -- autotranslate,ipynb
+--python autotranslate  -- autotranslate.ipynb
 
  	1.install required libraries Goslate, Translate, TextBlob, py-translate, Googletrans and import
+   	2.
+
