@@ -45,4 +45,15 @@
 
  	1.import all package and filedialog from tkinter and mixer from pygame if not install
    	2.define buttons and define music actions function load, play, pause, stop
-    3.run the music player
+    3.call and run the music player
+
+--python video player  -- videoplayer.ipynb
+
+ 	1.import numpy, cv2, opencv-python if not install
+   	2.define function and run the video player
+
+--python sqlite3 transfer  -- database.ipynb
+
+ 	1.import sqlite3, pandas, pandas if not install
+   	2.name a connection to db in local directory
+    3. load the created file and transfer the data to db
