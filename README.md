@@ -22,7 +22,7 @@
  	1.install required library PyPDF2 if not installed
    	2.import and define function to read and extract data
 
---python pdf file  -- pdf_file.ipynb
+--python pdf file  -- class.ipynb
 
  	1.define the class and define function of employee count and detaile
    	2.self init basic parameters to define and store in it
