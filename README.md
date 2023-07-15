@@ -17,4 +17,9 @@
    	2.import and read,export data by your choice
     3.csv as normal excel export and pickle as pickle format and json as json format and finally we can read and write in the files
 
+--python pdf file  -- pdf_file.ipynb
+
+ 	1.install required library PyPDF2 if not installed
+   	2.import and define function to read and extract data
+
 
