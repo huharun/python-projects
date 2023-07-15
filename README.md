@@ -22,11 +22,15 @@
  	1.install required library PyPDF2 if not installed
    	2.import and define function to read and extract data
 
---python pdf file  -- class.ipynb
+--python class detail  -- class.ipynb
 
  	1.define the class and define function of employee count and detaile
    	2.self init basic parameters to define and store in it
     3.can store individual or use array
     4.finally call the functions to print the stored data
 
+--python digital clock  -- clock.ipynb
 
+ 	1.import strftime, Label, Tk from time and tkinter
+   	2.define window,label with the size, font, relief etc 
+    3.create funtion to get time and configure and call with window
