@@ -34,3 +34,15 @@
  	1.import strftime, Label, Tk from time and tkinter
    	2.define window,label with the size, font, relief etc 
     3.create funtion to get time and configure and call with window
+
+--python guess game   -- guessgame.ipynb
+
+ 	1.import reandom and define functions for easy hard and medium level and define main guess functions
+   	2.get the input from user and return values accordingly gueses balance
+    3.finally play again option to replay the game
+
+--python music player  -- music.ipynb
+
+ 	1.import all package and filedialog from tkinter and mixer from pygame if not install
+   	2.define buttons and define music actions function load, play, pause, stop
+    3.run the music player
